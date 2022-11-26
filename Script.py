@@ -11,11 +11,17 @@ def is_enabled(value, default):
         return default
 
 class script(object):
-    START_TXT = environ.get("START_TXT", '''<b>Hello {} 👋🏻 Im Search Bot I can share Movies and Series 😁.</b>
+    START_TXT = """
+<i>👋 Hᴇʏ,</i>{}\n
+<i>I'ᴍ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴏᴠɪᴇ🎭 ꜰɪɴᴅᴇʀ & ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ🤖</i>\n
+<i>Cʟɪᴄᴋ ᴏɴ Hᴇʟᴘ🆘 ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ</i>n\
+
+<i><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @Rajneesh_Singh_Tomar</b>"""
+
 
 <i>Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴍᴀɢɪᴄ ᴏʀ ʀᴇᴀᴅ ᴍᴏʀᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇɴᴜ ʙᴇʟᴏᴡ</i>''')
-    HELP_TXT = """𝙷𝙴𝚈 {}
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝙷𝙴𝙻𝙿 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
+    HELP_TXT = """👋 {}
+𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳."""
     ABOUT_TXT = """<b><i>🤖 ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/Search_zone_bot><b>Search Bot</b></a>\n
 👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/GreyMatter_Owner><b>GreyMatter</b></a>\n
 📝 ʟᴀɴɢᴜᴀɢᴇ : ᴘʏʀᴏɢʀᴀᴍ\n
@@ -23,15 +29,18 @@ class script(object):
 📡 ʜᴏsᴛᴇᴅ ᴏɴ : VPS\n
 📢 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/GreyMatter_Bots><b></b>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n
 🌟 ᴠᴇʀsɪᴏɴ : ᴠ 4.0\n</b></i>"""
-    SOURCE_TXT = """<b>𝐂𝐫𝐞𝐚𝐭𝐞 𝐎𝐧𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬:</b>
-» I will Create One Bot For You<b>
-» Contact Me @GreyMatter_Owner<b>"""
+    SOURCE_TXT = """<b>NOTE:</b>
+- <b>FP BOT is a open source project. 
+- Source 👉 <a href=https://t.me/Rajneesh_Singh_Tomar>CLICK HERE</a></b>
+
+<b>DEVS:</b>
+- <a href=https://t.me/Rajneesh_Singh_Tomar>Rajneesh_Singh_Tomar</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
-- Filter is the feature were users can set automated replies for a particular keyword and Search Bot will respond whenever a keyword is found the message
+- Filter is the feature were users can set automated replies for a particular keyword and FP Bot will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
-1. Search Bot should have admin privillage.
+1. FILMY PITARA have admin privillage.
 2. only admins can add filters in a chat.
 3. alert buttons have a limit of 64 characters.
 
@@ -42,15 +51,15 @@ class script(object):
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
-- Search Bot Supports both url and alert inline buttons.
+- FP Bot Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. Search Bot supports buttons with any telegram media type.
+2. FP Bot supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/GreyMatter_Owner)</code>
+<code>[Button Text](buttonurl:https://t.me/Rajneesh_Singh_Tomar)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
@@ -117,3 +126,164 @@ This module only works for my admins
 <b>᚛› 𝐈𝐃 - <code>{}</code></b>
 <b>᚛› 𝐍𝐚𝐦𝐞 - {}</b>
 """
+START_TXT = """
+<i>👋 Hᴇʏ,</i>{}\n
+<i>I'ᴍ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴏᴠɪᴇ🎭 ꜰɪɴᴅᴇʀ & ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ🤖</i>\n
+<i>Cʟɪᴄᴋ ᴏɴ Hᴇʟᴘ🆘 ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ</i>n\
+
+<i><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @Rajneesh_Singh_Tomar</b>"""
+
+    GHHM_TXT = """<b>💖 Thanks For Your Support...
+
+𝖩𝗎𝗌𝗍 𝖠𝖽𝖽 𝖮𝗎𝗋 𝖡𝗈𝗍 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 𝖠𝗌 𝖠𝖽𝗆𝗂𝗇, 𝖨𝗍 𝖶𝗂𝗅𝗅 𝖯𝗋𝗈𝗏𝗂𝖽𝖾 𝖬𝗈𝗏𝗂𝖾𝗌 𝖳𝗁𝖾𝗋𝖾... 😎
+
+
+     ♋️ 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀 ♋️
+
+🌟 AutoFilter, Manual Filter
+🌟 IMDb HD Posters
+🌟 IMDb Real Details
+🌟 Two Buttons Mode
+🌟 Force Subscribe
+🌟 Extra Features: download songs, download you tube video, URL Shortner,  
+
+⚙ More Features Adding Soon</b> 😎"""
+
+    GHHN_TXT = """Extra features"""
+    URLSHORT_TXT = """<b>➤ 𝐇𝐞𝐥𝐩: 𝖴𝗋𝗅 𝗌𝗁𝗈𝗋𝗍𝗇𝖾𝗋
+
+𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚜𝚑𝚘𝚛𝚝 𝚊 𝚞𝚛𝚕 
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
+
+➪ /short: 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌
+
+➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
+/short https://t.me/+veUIdIW2CQ5GU5</b>"""
+
+
+    URLSHORTN_TXT = """<b>➤ 𝐇𝐞𝐥𝐩: 𝖴𝗋𝗅 𝗌𝗁𝗈𝗋𝗍𝗇𝖾𝗋
+
+𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚜𝚑𝚘𝚛𝚝 𝚊 𝚞𝚛𝚕 
+
+➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
+
+➪ /short: 𝗎𝗌𝖾 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗐𝗂𝗍𝗁 𝗒𝗈𝗎𝗋 𝗅𝗂𝗇𝗄 𝗍𝗈 𝗀𝖾𝗍 𝗌𝗁𝗈𝗋𝗍𝖾𝖽 𝗅𝗂𝗇𝗄𝗌
+
+➛𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
+/short https://t.me/+veUIdIW25mOGU5</b>"""
+
+    VIDEO_TXT ="""<b>𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝚅𝙸𝙳𝙴𝙾 𝙵𝚁𝙾𝙼 𝚈𝙾𝚄𝚃𝚄𝙱𝙴.
+
+• 𝘜𝘴𝘢𝘨𝘦
+𝘠𝘰𝘶 𝘊𝘢𝘯 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘈𝘯𝘺 𝘝𝘪𝘥𝘦𝘰 𝘍𝘳𝘰𝘮 𝘠𝘰𝘶𝘵𝘶𝘣𝘦
+
+𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
+• 𝘛𝘺𝘱𝘦 /video or /mp4 𝘈𝘯𝘥 (𝘝𝘪𝘥𝘦𝘰 Link)
+• 𝘌𝘹𝘢𝘮𝘱𝘭𝘦:
+/𝘮𝘱4 https://youtu.be/Your Link</b>"""
+
+    VIDEOS_TXT ="""<b>𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝚅𝙸𝙳𝙴𝙾 𝙵𝚁𝙾𝙼 𝚈𝙾𝚄𝚃𝚄𝙱𝙴.
+
+• 𝘜𝘴𝘢𝘨𝘦
+𝘠𝘰𝘶 𝘊𝘢𝘯 𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥 𝘈𝘯𝘺 𝘝𝘪𝘥𝘦𝘰 𝘍𝘳𝘰𝘮 𝘠𝘰𝘶𝘵𝘶𝘣𝘦
+
+𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
+• 𝘛𝘺𝘱𝘦 /video or /mp4 𝘈𝘯𝘥 (𝘝𝘪𝘥𝘦𝘰 Link)
+• 𝘌𝘹𝘢𝘮𝘱𝘭𝘦:
+/𝘮𝘱4 https://youtu.be/Your Link</b>"""
+
+    YTTHUMB_TXT = """<b>𝙷𝙴𝙻𝙿𝚂 𝚃𝙾 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙰𝙽𝚈 𝚈𝙾𝚄𝚃𝚄𝙱𝙴 𝚅𝙸𝙳𝙴𝙾 𝚃𝙷𝚄𝙼𝙱𝙽𝙰𝙸𝙻
+    
+⭕𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
+𝘛𝘺𝘱𝘦 /ytthumb 𝘈𝘯𝘥 𝘝𝘪𝘥𝘦𝘰 𝘓𝘪𝘯𝘬
+
+• 𝘌𝘹𝘢𝘮𝘱𝘭𝘦
+/ytthumb https://youtu.be/yourlink</b>"""
+
+    SONG_TXT = """<b>𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴...
+
+𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴, 𝙵𝙾𝚁 𝚃𝙷𝙾𝚂𝙴 𝚆𝙷𝙾 𝙻𝙾𝚅𝙴 𝙼𝚄𝚂𝙸𝙲. 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙵𝙴𝙰𝚃𝚄𝙴 𝙵𝙾𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙰𝙽𝚈 𝚂𝙾𝙽𝙶 𝚆𝙸𝚃𝙷 𝚂𝚄𝙿𝙴𝚁 𝙵𝙰𝚂𝚃 𝚂𝙿𝙴𝙴𝙳.𝚆𝙾𝚁𝙺𝚂 𝙾𝙽𝙻𝚈 𝙾𝙽 𝙶𝚁𝙾𝚄𝙿𝚂..
+
+<𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂
+
+››  /song 𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴 
+
+𝚆𝙾𝚁𝙺𝚂 𝙾𝙽𝙻𝚈 𝙾𝙽 𝙶𝚁𝙾𝚄𝙿
+
+𝙲𝚁𝙴𝙳𝙸𝚃𝚂 :- <a href=https://t.me/Rajneesh_Singh_Tomar>Rajneesh_Singh_Tomar </b></a>"""
+
+
+    FILESTORE_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐌𝐨𝐝𝐮𝐥𝐞../
+
+<b>𝙱𝚈 𝚄𝚂𝙸𝙽𝙶 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚂𝚃𝙾𝚁𝙴 𝙵𝙸𝙻𝙴𝚂 𝙸𝙽 𝙼𝚈 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝙰𝙽𝙳 𝙸 𝚆𝙸𝙻𝙻 𝙶𝙸𝚅𝙴 𝚈𝙾𝚄 𝙰 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙻𝙸𝙽𝙺  𝚃𝙾 𝙰𝙲𝙲𝙴𝚂𝚂 𝚃𝙷𝙴 𝚂𝙰𝚅𝙴𝙳 𝙵𝙸𝙻𝙴𝚂.𝙸𝙵 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙰𝙳𝙳 𝙵𝙸𝙻𝙴𝚂 𝙵𝚁𝙾𝙼 𝙰 𝙿𝚄𝙱𝙻𝙸𝙲 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚂𝙴𝙽𝙳 𝚃𝙷𝙴 𝙵𝙸𝙻𝚆 𝙻𝙸𝙽𝙺 𝙾𝙽𝙻𝚈  𝙾𝚁 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙰𝙳𝙳 𝙵𝙸𝙻𝙴𝚂 𝙵𝚁𝙾𝙼 𝙰  𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚈𝙾𝚄 𝙼𝚄𝚂𝚃 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽 𝙾𝙽 𝚃𝙷𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙾 𝙰𝙲𝙲𝙴𝚂𝚂 𝙵𝙸𝙻𝙴𝚂...//</b>
+
+⪼ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞 ›
+
+➪ /plink ›› <b>𝚁𝙴𝙿𝙻𝚈 𝚃𝙾 𝙰𝙽𝚈 𝙼𝙴𝙳𝙸𝙰 𝚃𝙾 𝙶𝙴𝚃 𝙻𝙸𝙽𝙺.</b>
+➪ /pbatch ›› <b>𝚄𝚂𝙴 𝚈𝙾𝚄𝚁 𝙼𝙴𝙳𝙸𝙰 𝙻𝙸𝙽𝙺 𝚆𝙸𝚃𝙷 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳.</b>
+➪ /batch ›› <b>𝚃𝙾 𝙲𝚁𝙴𝙰𝚃𝙴 𝙻𝙸𝙽𝙺 𝙵𝙾𝚁 𝙼𝚄𝙻𝚃𝙸𝙿𝙻𝙴 𝙵𝙸𝙻𝙴𝚂.</b>
+
+⪼ 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 ›
+
+<code>/batch https://t.me/gjcjknxz/2 https://t.me/jfksucxhb/8</code>
+
+𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/Rajneesh_Singh_Tomar>Rajneesh_Singh_Tomar</a></b>"""
+
+    FORCESUB_TXT = """Jᴏɪɴ  Official ᴄʜᴀɴɴᴇʟ ᴛᴏ Proceed 🔐 """
+    
+    OWNER_TXT = """<b>>━━━━᚜ Owner Details ᚛━━━━<
+    
+⭕️ FULL NAME : Rajneesh Singh Tomar
+⭕️ USERNAME: @Rajnesh_Singh_Tomar
+⭕️PERMANENT DM LINK : <a href=https://t.me/Rajneesh_Singh_Tomar>CLICK Here</a></b>"""
+
+    GROUP_R_TXT = """<b>GROUP RULES
+
+☀️  Search With Correct Spelling..
+
+☀️ Try to Search movie With  Year If The bot is Not Sending You Accurate Result..
+
+☀️ Search Series In The Given From Example : Gotham S03E01 And S03E10..
+
+☀️ Search Movies  in The Given From Example:    
+(1) Avengers.. ✅
+(2) Avengers Hindi. ✅
+(3) Don't Tipe Avengers Hindi Dubbed..❌
+
+☀️Don't Do Any Self Promotion.
+
+☀️ Don't Send Any Kind Of Photo Video Documents URL ETC.
+
+☀️ Sending The Above  Mantained Things Will Lead To Permanent Ban.
+
+☀️Don't Request Any Things Other Than Movie Series Animes.
+
+☀️ Give and Tak Respect</b>.."""
+
+MALIK_PHH = """<b>Hay 👋 {}.... 🌷 ❤️
+
+😎 welcome to Our Group...
+
+😎 You Can Find 🔍 Movies / Series / Animes etc.</b>"""
+
+ALURT_FND = """<b>.
+
+CHECK YOUR MOVIE ON THE GIVEN LIST AND SELECT YOUR MOVIE.. 
+
+दी गई सूची में अपनी फिल्म देखें और अपनी फिल्म चुनें</b> 👇👇👇"""
+
+ADG = """<b>Hay. {}..\n\nThankyou For Adding Me In.. ❣️
+
+             👉 <s>{}</s> 👈 
+
+If you have any questions & doubts about using me..\n\n Contact my Owner >> @Rajneesh_Singh_Tomar</b>"""
+
+ADDG = """
+<i>👋 Hᴇʏ,</i>{}{}\n
+<i>I'ᴍ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴏᴠɪᴇ🎭 ꜰɪɴᴅᴇʀ & ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ🤖</i>\n
+<i>Cʟɪᴄᴋ ᴏɴ Hᴇʟᴘ🆘 ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ</i>\n
+
+<i><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @Rajneesh_Singh_Tomar</b>"""
+
+M_NT_FND = """<b>⭕️ This Movie Not Found my Database... \n\n⭕️ Request to admin.. 👇</b>"""
