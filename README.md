@@ -1,32 +1,20 @@
-## • What's New ?
-
-- ⟴ Search in PM
-- ⟴ Self Delete Added (Auto delete)
-- ⟴ Filter On Off Option Added
-- ⟴ Custom Welcome Message
-- ⟴ Custom Download Name And URL
-- ⟴ Custom Texts (About, Help, Stats,More..)
-- ⟴ Custom URL Buttons (Updates channel, Add To Group, Force Sub, More...)
-
-
-
-
 <p align="center">
-  <img src="https://github.com/GreyMattersBot/url-auto-delete-shortener-bot/blob/main/assets/IMG_20220105_010453-removebg-preview.png" alt="GreyMatter's Bot Logo">
+  <img src="https://user-images.githubusercontent.com/105805201/192936277-dcc0fa25-a8d1-41c8-8039-00d383ea56c7.jpg" alt="Ajax Techz">
 </p>
 <h1 align="center">
-  <b>GreyMatter's Bot</b>
+  <b>Movie-Finder-bot</b>
 </h1>
+<a href="https://youtube.com/channel/UCFDpDpnOgcoztiiIkjnJYfw">
+  <img src="https://user-images.githubusercontent.com/105805201/193200984-945641aa-05c9-41ce-b6a2-13a876a8832b.svg" width="150">
 
-
+[![Stars](https://user-images.githubusercontent.com/105805201/193201047-3d9aa592-1c4e-4b17-8e0d-e3cfcc66176c.svg)](https://github.com/Moviesindna/moviefinderbot/stargazers)
+[![Forks](https://user-images.githubusercontent.com/105805201/193201090-73f7ff5d-be1d-4668-8a31-6f544aab9dba.svg)](https://github.com/Moviesindna/moviefinderbot/network/members)
+[![Size](https://user-images.githubusercontent.com/105805201/193201170-b389f999-c07e-4d0f-8aee-5701a6263fbc.svg)](https://github.com/Moviesindna/moviefinderbot)   
+[![Open Source happy ](https://user-images.githubusercontent.com/105805201/193201236-21414dcf-8978-4fb3-b53c-c6c2dc846a53.svg)](https://github.com/Moviesindna/moviefinderbot)   
 ## Features
 
-- [x] 2GB+ Files Now Support
-- [x] URL Shortener Added
-- [x] Custom Buttons
 - [x] Auto Filter
 - [x] Manual Filter
-- [x] Search in PM
 - [x] IMDB
 - [x] Admin Commands
 - [x] Broadcast
@@ -37,10 +25,8 @@
 - [x] ids and User info 
 - [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
 - [x] Spelling Check Feature
-- [x] File Store
-## Variables
 
-Read [this](https://telegram.dog/GreyMatter_Bots) before you start messing up with your edits.
+## Variables
 
 ### Required Variables
 * `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
@@ -48,44 +34,35 @@ Read [this](https://telegram.dog/GreyMatter_Bots) before you start messing up wi
 * `API_HASH`: Get this value from [telegram.org](https://my.telegram.org/apps)
 * `CHANNELS`: Username or ID of channel or group. Separate multiple IDs by space
 * `ADMINS`: Username or ID of Admin. Separate multiple Admins by space
-* `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/h9QjSSmk5tw)
-* `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/h9QjSSmk5tw)
+* `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com).
+* `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help watch this 
 * `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
 ### Optional Variables
-* `PICS`: Telegraph links of images to show in start message.( Multiple images can be used separated by space )
-* `FILE_STORE_CHANNEL`: Channel from were file store links of posts should be made.Separate multiple IDs by space
-* Check [info.py](https://github.com/GreyMattersBot/Advance-EvaMaria/blob/main/info.py) for more
-## EXTRA FEATURES
-* `URL_SHORTENR_WEBSITE`: URL Shortener Website Link ( Without https://)
-* `URL_SHORTNER_WEBSITE_API`: URL Shortener Website API key
-* `SELF_DELETE`: True if SELF_DELETE is On, False if Off
-* `SELF_DELETE_SECONDS`: Enter Seconds to be SELF_DELETE 
-* `START_TXT`: Enter Your Start Message
-* `ABOUT_TXT`: Enter Your About Message 
+* `PICS`: Telegraph links of images to show in start message.( Multiple images can be used seperated by space )
 
 
 ## Deploy
 You can deploy this bot anywhere.
 
-<i>**[Watch Deploying Tutorial...](https://youtu.be/RWs6sh8m2Uk)**</i>
+<i>**[HOW TO DEPLOY WTCH THIS VIDEO...](https://youtu.be/v7Vbu3u_VrE)**</i>
 
-<details><summary>Deploy To Heroku</summary>
+
+<details><summary>Deploy To Koyeb</summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/greymattersbot/url-auto-delete-shortener-bot">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+
+<a href="https://app.koyeb.com/">
+  <img src="https://user-images.githubusercontent.com/114851821/204074764-ac4d4894-f3d7-4f56-b9a9-42f0272c1a15.png" alt="Deploy">
 </a>
 </p>
 </details>
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Greymattersbot/Advance-EvaMaria&branch=koyeb&name=urlshortautofilterbot)
-
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/GreyMattersbot/url-auto-delete-shortener-bot
+git clone https://github.com/Moviesindna/moviefinderbot
 # Install Packages
-pip3 install -U -r requirements.txt
+pip3 install -r requirements.txt
 Edit info.py with variables as given below then run bot
 python3 bot.py
 </pre>
@@ -95,46 +72,30 @@ python3 bot.py
 
 ## Commands
 ```
-logs - to get the rescent errors
-stats - to get status of files in db.
-filter - add manual filters
-filters - view filters
-connect - connect to PM.
-disconnect - disconnect from PM
-del - delete a filter
-delall - delete all filters
-deleteall - delete all index(autofilter)
-delete - delete a specific file from index.
-info - get user info
-id - get tg ids.
-imdb - fetch info from imdb.
-users - to get list of my users and ids.
-chats - to get list of the my chats and ids 
-index  - to add files from a channel
-leave  - to leave from a chat.
-disable  -  do disable a chat.
-enable - re-enable chat.
-ban  - to ban a user.
-unban  - to unban a user.
-channel - to get list of total connected channels
-broadcast - to broadcast a message to all Eva Maria users
-batch - to create link for multiple posts
-link - to create link for one post
+• /logs - to get the rescent errors
+• /stats - to get status of files in db.
+* /filter - add manual filters
+* /filters - view filters
+* /connect - connect to PM.
+* /disconnect - disconnect from PM
+* /del - delete a filter
+* /delall - delete all filters
+* /deleteall - delete all index(autofilter)
+* /delete - delete a specific file from index.
+* /info - get user info
+* /id - get tg ids.
+* /imdb - fetch info from imdb.
+• /users - to get list of my users and ids.
+• /chats - to get list of the my chats and ids 
+• /index  - to add files from a channel
+• /leave  - to leave from a chat.
+• /disable  -  do disable a chat.
+* /enable - re-enable chat.
+• /ban  - to ban a user.
+• /unban  - to unban a user.
+• /channel - to get list of total connected channels
+• /broadcast - to broadcast a message to Ajax users
 ```
-## Support
-[![telegram badge](https://img.shields.io/badge/Telegram-Group-30302f?style=flat&logo=telegram)](https://t.me/greymatters_bots_discussion)
-[![telegram badge](https://img.shields.io/badge/Telegram-Channel-30302f?style=flat&logo=telegram)](https://t.me/greymatter_bots)
 
-## Thanks to 
- - Thanks To Dan For His Awesome [Library](https://github.com/pyrogram/pyrogram)
- - Thanks To [ᎯℕUℛᎯᎶ](https://telegram.dog/gurubhai11) for his awesome Auto-delete Feature.
- - Thanks To [RushikeshNarule](https://github.com/rushikeshnarule) for Search in PM feature.
- - Thanks To All Everyone In This Journey
-
-### Note
-
-you a Developer.
-Fork the repo and edit as per your needs.
-
-## Inspiration
-🙃
+𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 👉 [Rajneesh Singh Tomar ](https://t.me/Rajneesh_Singh_Tomar)                                                                                                                                                                                 
+𝙲𝙷𝙰𝙽𝙽𝙴𝙻 👉 [Filmy Pitara](https://t.me/FILMY_PITARA)
