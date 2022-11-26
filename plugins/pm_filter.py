@@ -127,6 +127,11 @@ async def next_page(bot, query):
                 InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
+btn.insert(0, [
+        InlineKeyboardButton('🎭ᴍᴏᴠɪᴇ ᴄʜᴀɴɴᴇʟ🎭', url='https://t.me/+Dek49ihM4u5iNWQ1'),
+        InlineKeyboardButton('🆘ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ🆘', url='https://t.me/F_pitara')
+
+     ])
     try:
         await query.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup(btn)
