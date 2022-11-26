@@ -2,7 +2,7 @@ import os
 import logging
 import random
 import asyncio
-from Script import script
+from Script import script, ADDG
 from pyrogram import Client, filters, enums
 from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
@@ -21,14 +21,13 @@ BATCH_FILES = {}
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
-        buttons = [
-            [
-                InlineKeyboardButton('🤖 𝚄𝚙𝚍𝚊𝚝𝚎𝚜', url='https://t.me/GreyMatter_Bots')
-            ],
-            [
-                InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            ]
-            ]
+        buttons = [[
+                InlineKeyboardButton('ᴀᴅᴅ ᴛᴏ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+                InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+Dek49ihM4u5iNWQ1')
+            ],[
+                InlineKeyboardButton('ʜᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
         await asyncio.sleep(2) # 😢 https://github.com/GreyMattersbot/EvaMaria/blob/master/plugins/p_ttishow.py#L17 😬 wait a bit, before checking.
@@ -42,14 +41,17 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ 𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙𝚜 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('ᴀᴅᴅ ᴛᴏ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 𝚂𝚎𝚊𝚛𝚌𝚑', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 𝚄𝚙𝚍𝚊𝚝𝚎𝚜', url='https://t.me/GreyMatter_Bots')
+            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/+Dek49ihM4u5iNWQ1'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Epic_creation_bots')
             ],[
-            InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', callback_data='help'),
-            InlineKeyboardButton('😊 𝙰𝚋𝚘𝚞𝚝', callback_data='about')
-        ]]
+            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+            ],[
+            InlineKeyboardButton('ꜱᴇᴀʀᴄʜ ɪɴʟɪɴᴇ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('ᴜʀʟ ꜱʜᴏʀᴛɴᴇʀ', callback_data='urlshortn')
+             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -67,8 +69,8 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Join Updates Channel", url=invite_link.invite_link
-                )
+                    "ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=invite_link.invite_link
+                 )
             ]
         ]
 
@@ -88,14 +90,17 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ 𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙𝚜 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('ᴀᴅᴅ ᴛᴏ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 𝚂𝚎𝚊𝚛𝚌𝚑', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 𝚄𝚙𝚍𝚊𝚝𝚎𝚜', url='https://t.me/GreyMatter_Bots')
+            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/+Dek49ihM4u5iNWQ1'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Epic_creation_bots')
             ],[
-            InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', callback_data='help'),
-            InlineKeyboardButton('😊 𝙰𝚋𝚘𝚞𝚝', callback_data='about')
-        ]]
+            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+            ],[
+            InlineKeyboardButton('ꜱᴇᴀʀᴄʜ ɪɴʟɪɴᴇ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('ᴜʀʟ ꜱʜᴏʀᴛɴᴇʀ', callback_data='urlshortn')
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
