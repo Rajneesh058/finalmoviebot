@@ -429,14 +429,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ], [
-            InlineKeyboardButton('⚡ SUBSCᏒIBΞ ⚡', url='https://youtube.com/c/GreyMattersBot'),
-            InlineKeyboardButton('🤖 UᎮDΛTΞS 🤖', url='{script.HOME_BUTTONURL_UPDATES')
-        ], [
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
-        ]]
+            InlineKeyboardButton('ᴀᴅᴅ ᴛᴏ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/+Dek49ihM4u5iNWQ1'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Epic_creation_bots')
+            ],[
+            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+            ],[
+            InlineKeyboardButton('ꜱᴇᴀʀᴄʜ ɪɴʟɪɴᴇ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('ᴜʀʟ ꜱʜᴏʀᴛɴᴇʀ', callback_data='urlshortn')
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -446,13 +449,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙿𝙿𝙾𝚁𝚃')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('𝙼𝙰𝙽𝚄𝙴𝙻 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='manuelfilter'),
-            InlineKeyboardButton('𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='autofilter')
+            InlineKeyboardButton('𝗠𝗮𝗻𝘂𝗲𝗹 𝗙𝗶𝗹𝘁𝗲𝗿', callback_data='manuelfilter'),
+            InlineKeyboardButton('𝗔𝘂𝘁𝗼 𝗙𝗶𝗹𝘁𝗲𝗿', callback_data='autofilter'),
+            InlineKeyboardButton('𝗖𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗼𝗻𝘀', callback_data='coct')
         ], [
-            InlineKeyboardButton('𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽𝚂', callback_data='coct'),
-            InlineKeyboardButton('𝙴𝚇𝚃𝚁𝙰 𝙼𝙾D𝚂', callback_data='extra')
+            InlineKeyboardButton('𝗘𝘅𝘁𝗿𝗮 𝗠𝗼𝗱𝗲𝘀', callback_data='GHHM'),
+            InlineKeyboardButton('𝗛𝗼𝗺𝗲 ', callback_data='start'),
+            InlineKeyboardButton('SONGS', callback_data='songs')
         ], [
-            InlineKeyboardButton('🏠 H𝙾𝙼𝙴 🏠', callback_data='start'),
+            InlineKeyboardButton('𝗦𝘁𝗮𝘁𝘀', callback_data='stats'),
+            InlineKeyboardButton('𝚄𝚁𝙻 𝚂𝙷𝙾𝚁𝚃', callback_data='urlshort'),
+            InlineKeyboardButton(' 𝗢𝗪𝗡𝗘𝗥', url='https://t.me/Rajneesh_Singh_Tomar')
+        ], [
+            InlineKeyboardButton('𝚈𝚃-𝚃𝙷𝚄𝙼𝙱', callback_data='ytthumb'),
+            InlineKeyboardButton('video', callback_data='video'),
+            InlineKeyboardButton('File-Store', callback_data='malikk')
+        ], [
+            InlineKeyboardButton('🚶‍♀ 𝙱𝙰𝙲𝙺 🚶‍♀', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -462,13 +475,132 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🏠 H𝙾𝙼𝙴 🏠', callback_data='start'),
-         ]]
+            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/Epic_creation_bots'),
+            InlineKeyboardButton('Source', callback_data='source')
+        ], [
+            InlineKeyboardButton('𝗛𝗼𝗺𝗲', callback_data='start'),
+            InlineKeyboardButton('𝗖𝗹𝗼𝘀𝗲', callback_data='close_data')
+        ], [
+            InlineKeyboardButton('𝗢𝗪𝗡𝗘𝗥', url='https://t.me/Rajneesh_Singh_Tomar'),
+            InlineKeyboardButton('Donation', callback_data='malik')
+        ], [
+            InlineKeyboardButton('🚶‍♀ 𝙱𝙰𝙲𝙺 🚶‍♀', callback_data='start')
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
+        )
+         buttons = [[
+            InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.URLSHORT_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "malikk":
+        buttons = [[
+            InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.FILESTORE_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "group_rules":
+        buttons = [[
+            InlineKeyboardButton('💢 close 💢', callback_data='close_data')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.GROUP_R_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "video":
+        buttons = [[
+            InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.VIDEO_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "songs":
+        buttons = [[
+            InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.SONG_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "owner":
+        buttons = [[
+            InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='start'),
+            InlineKeyboardButton('❗️ CONTACT ❗️', url='https://t.me/Rajneesh_Singh_Tomar')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.OWNER_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "urlshortn":
+        buttons = [[
+            InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='start')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.URLSHORTN_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "mbbumm":
+        buttons = [[
+            InlineKeyboardButton('ᴀᴅᴅ ᴛᴏ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.GHHM_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "videos":
+        buttons = [[
+            InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='start')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.VIDEOS_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "ytthumb":
+        buttons = [[
+            InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.YTTHUMB_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
         )
     elif query.data == "source":
         buttons = [[
@@ -480,6 +612,27 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+     elif query.data == "malik":
+        buttons = [[
+            InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='about')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.MALIK_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "dinette":
+        buttons = [[
+            InlineKeyboardButton('🚶 𝗕𝗮𝗰𝗸 🚶', callback_data='start')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.DINETTE_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+            
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 𝙱𝙰𝙲𝙺', callback_data='help'),
@@ -545,7 +698,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 𝙱𝙰𝙲𝙺', callback_data='help'),
-            InlineKeyboardButton('♻️ 𝚁𝙴𝙵𝚁𝙴𝚂𝙷', callback_data='rfrsh')
+            InlineKeyboardButton(' 𝚁𝙴𝙵𝚁𝙴𝚂𝙷', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -564,7 +717,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
             InlineKeyboardButton('👩‍🦯 𝙱𝙰𝙲𝙺', callback_data='help'),
-            InlineKeyboardButton('♻️ 𝚁𝙴𝙵𝚁𝙴𝚂𝙷', callback_data='rfrsh')
+            InlineKeyboardButton(' 𝚁𝙴𝙵𝚁𝙴𝚂𝙷', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
