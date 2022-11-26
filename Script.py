@@ -277,7 +277,7 @@ ADG = """<b>Hay. {}..\n\nThankyou For Adding Me In.. ❣️
 
              👉 <s>{}</s> 👈 
 
-If you have any questions & doubts about using me..\n\n Contact my Owner >> @Rajneesh_Singh_Tomar</b>"""
+If you have any questions & doubts about using me..\n\n Contact my Owner >> @Rajneesh_Singh_Tomar</b>
 
 ADDG = """
 <i>👋 Hᴇʏ,</i>{}{}\n
@@ -286,4 +286,4 @@ ADDG = """
 
 <i><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @Rajneesh_Singh_Tomar</b>"""
 
-M_NT_FND = """<b>⭕️ This Movie Not Found my Database... \n\n ⭕️ Request to admin.. 👇</b>"""
+M_NT_FND = <b>⭕️ This Movie Not Found my Database... \n\n ⭕️ Request to admin.. 👇</b>"""
