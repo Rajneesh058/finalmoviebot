@@ -22,7 +22,16 @@ PORT = environ.get("PORT", "8080")
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/b806ad314d0c415571bde.jpg')).split()
+
+
+PICS = (environ.get('PICS', ' https://ibb.co/5MPY7qS https://ibb.co/CBHvfmr https://ibb.co/3TdBmTW https://ibb.co/jw6kDdZ https://ibb.co/yndX31k https://ibb.co/v4TJJ8Z https://ibb.co/NrZ6hmd  https://telegra.ph/Pic-11-16-3 https://telegra.ph/Pic2-11-16 https://telegra.ph/Pic-3-11-16 https://telegra.ph/Pic-4-11-16')).split()
+MALIK_PH = environ.get("MALIK_PH", "https://telegra.ph/file/0547d69b90b596ad6bae1.jpg")
+SMART_PIC = environ.get("SMART_PIC", "https://telegra.ph/file/7cf564b255461abfc75fe.jpg")
+VIDEO_VD = environ.get("VIDEO_VD", "https://telegra.ph/file/566ff238e36d9f2425568.mp4")
+PHT = environ.get("PHT", "https://telegra.ph/file/9b77b96a9d2f5dda7764b.jpg")
+PHTT = environ.get("PHTT", "   https://telegra.ph/Pic-11-16-3 https://telegra.ph/Pic2-11-16 https://telegra.ph/Pic-3-11-16 https://telegra.ph/Pic-4-11-16")
+M_NT_F = environ.get("M_NT_F", "https://telegra.ph/file/b9c8a8240590623ba43ee.jpg")
+
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
