@@ -275,7 +275,7 @@ ADG = """<b>Hay. {}..\n\nThankyou For Adding Me In.. ❣️
 
              👉 <s>{}</s> 👈 
 
-If you have any questions & doubts about using me..\n\n Contact my Owner >> @Rajneesh_Singh_Tomar</b>
+If you have any questions & doubts about using me..\n\n Contact my Owner >> @Rajneesh_Singh_Tomar</b>"""
 
 ADDG = """
 <i>👋 Hᴇʏ,</i>{}\n
