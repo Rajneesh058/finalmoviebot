@@ -277,10 +277,10 @@ ADG = """<b>Hay. {}..\n\nThankyou For Adding Me In.. ❣️
 
 If you have any questions & doubts about using me..\n\n Contact my Owner >> @Rajneesh_Singh_Tomar</b>
 
-ADDG = '''👋 Hᴇʏ
-I'ᴍ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴏᴠɪᴇ🎭 ꜰɪɴᴅᴇʀ & ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ🤖
-Cʟɪᴄᴋ ᴏɴ Hᴇʟᴘ🆘 ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ
-
-ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @Rajneesh_Singh_Tomar'''
+ADDG = """
+<i>👋 Hᴇʏ,</i>{}\n
+<i>I'ᴍ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴏᴠɪᴇ🎭 ꜰɪɴᴅᴇʀ & ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ🤖</i>\n
+<i>Cʟɪᴄᴋ ᴏɴ Hᴇʟᴘ🆘 ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ</i>n\
+<i><b>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : @Rajneesh_Singh_Tomar</b>"""
 
 M_NT_FND = """⭕️ This Movie Not Found my Database... \n\n ⭕️ Request to admin.. 👇"""
